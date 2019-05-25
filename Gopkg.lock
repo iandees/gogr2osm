@@ -2,6 +2,18 @@
 
 
 [[projects]]
+  digest = "1:4652941215f23c7ad6546bab86964c72248a1134baa53f0df618661344ba5cac"
+  name = "github.com/gogo/protobuf"
+  packages = [
+    "gogoproto",
+    "proto",
+    "protoc-gen-gogo/descriptor",
+  ]
+  pruneopts = "UT"
+  revision = "ba06b47c162d49f2af050fb4c75bcbc86a159d5c"
+  version = "v1.2.1"
+
+[[projects]]
   branch = "master"
   digest = "1:2362fe858d2444120b579f0ebe8462299ca5e1c00efd4e2fb066d717304b3437"
   name = "github.com/lukeroth/gdal"
@@ -9,9 +21,36 @@
   pruneopts = "UT"
   revision = "12281a1fa6b394acb47075aecf2ec7efba7b5a87"
 
+[[projects]]
+  digest = "1:ce4e912bf57fc1a3728fc8b14c4d0bd65b1c7f904c18ac3ad9839338e7ef12e9"
+  name = "github.com/paulmach/orb"
+  packages = [
+    ".",
+    "geojson",
+    "internal/mercator",
+    "maptile",
+  ]
+  pruneopts = "UT"
+  revision = "c6e407b203494d3b1edb9fd5cae4cf34a4ae0f29"
+  version = "v0.1.3"
+
+[[projects]]
+  digest = "1:49e4a31bb7e19dfd5cf9d3c820f10b9b011c27b521068c9503b7e51224951e1e"
+  name = "github.com/paulmach/osm"
+  packages = [
+    ".",
+    "internal/osmpb",
+  ]
+  pruneopts = "UT"
+  revision = "7a428b332f5f6a5ab5b361caa0d09a196088c9fc"
+  version = "v0.0.1"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/lukeroth/gdal"]
+  input-imports = [
+    "github.com/lukeroth/gdal",
+    "github.com/paulmach/osm",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
