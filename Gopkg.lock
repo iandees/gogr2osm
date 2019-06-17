@@ -45,12 +45,27 @@
   revision = "7a428b332f5f6a5ab5b361caa0d09a196088c9fc"
   version = "v0.0.1"
 
+[[projects]]
+  branch = "master"
+  digest = "1:b77a8a4a6809ee83dc1f2786cbb39e71768d72142621ca925d37935a44740d0c"
+  name = "go.starlark.net"
+  packages = [
+    "internal/compile",
+    "internal/spell",
+    "resolve",
+    "starlark",
+    "syntax",
+  ]
+  pruneopts = "UT"
+  revision = "47ec06841dbebd22858703426bb09ee7e1b42f73"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
     "github.com/lukeroth/gdal",
     "github.com/paulmach/osm",
+    "go.starlark.net/starlark",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
